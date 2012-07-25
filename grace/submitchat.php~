@@ -1,0 +1,23 @@
+<?php
+$username = $_REQUEST['username'];
+$password = $_REQUEST['password'];
+$chatChannelId = $_REQUEST['chatChannelId'];
+$body = $_REQUEST['body'];
+
+$url = "https://vula.uct.ac.za/direct/chat-message/new";
+$curl = curl_init($url);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_USERPWD, "$username:$password");
+//curl_setopt($curl, CURLOPT_POSTFIELDS, array('name:chatChannelId' => "value:".$chatChannelId, 'name:body' => "value:".$body));
+curl_setopt($curl, CURLOPT_POSTFIELDS, array('chatChannelId' => $chatChannelId, 'body' => $body));
+curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+
+$response = curl_exec($curl);
+//echo $response;
+$array= explode("\n", $response);
+if(count($array) > 1)
+{
+	echo -1;
+}
+?>

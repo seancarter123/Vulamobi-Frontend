@@ -1,0 +1,105 @@
+a:link { 
+	color: black;
+	}
+a:visited { 
+	color: black;
+	}
+a:active { 
+	color: black;
+	}
+
+.ablocks
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	margin-top: 10px;
+	height: 100%;
+	min-height: 100px;
+}
+
+.bblock.a.c
+{
+	background-color: #66E0FF;
+}
+
+.bblock.b.c
+{
+	background-color: #80CC99;
+}
+
+.bblock.a.d
+{
+	background-color: #FF8566;
+}
+
+.bblock.b.d
+{
+	background-color: #FF99FF;
+}
+
+.a
+{
+	float: left;
+}
+
+.b
+{
+	float: right;
+}
+
+.bblock
+{
+	background-color: #00a2e8;
+	padding-top: 50px;
+	width: 48%;
+	min-height: 100px;
+	display: inline-block;
+	text-align: center;
+	color: black;
+}
+
+.breadcrumbs{
+	width: 200px;
+}
+
+.desc
+{
+	width: 100%;
+}
+
+#announcements
+{
+	background-color: #66E0FF;
+}
+
+#assignments
+{
+	background-color: #FF8566;
+}
+
+#chat
+{
+	background-color: #FF99FF;
+	height: 100%;
+}
+
+#resources
+{
+	background-color: #80CC99;
+}
+
+.time
+{
+	width: 100%;
+	background-color: green;
+	color: white;
+}
+
+.ui-block-b
+{
+	background-color: #00a2e8;
+	padding-top: 10px;
+	width: 40px;
+}
